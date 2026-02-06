@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact Chef Yoav Schverd for private chef services, luxury catering, and culinary consulting. Book your exceptional dining experience today"
+    />
+    <meta
+      name="keywords"
+      content="contact chef yoav schverd, book private chef, luxury catering inquiry, culinary services contact"
+    />
+    <title>Chef Yoav Schverd - Contact</title>
+    <link rel="stylesheet" href="overstyles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <a href="index.html" title="חזרה לדף הבית - Return to Home Page">
+          <img
+            src="https://www.yoavschverd.com/wp-content/uploads/2019/11/yoav-logo-white-2048x441.png"
+            alt="Yoav Schverd Logo"
+            class="site-logo"
+          />
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html" title="דף הבית - Home Page">Home</a></li>
+          <li>
+            <a href="about.html" title="אודות השף - About the Chef">About</a>
+          </li>
+          <li>
+            <a href="services.html" title="שירותים - Services">Services</a>
+          </li>
+          <li><a href="gallery.html" title="גלריה - Gallery">Gallery</a></li>
+          <li>
+            <a href="contact.html" title="צור קשר - Contact Us">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- 
+      Json learned from:
+
+    www.w3schools.com/js/js_json.asp - Here I learned how to write JSON.
+
+    https://Schema.org
+    https://schema.org/HowTo 
+
+      -->
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Chef service",
+          "name": "Chef Yoav Schverd",
+          "description": "Professional private chef services, luxury catering, and culinary consulting",
+          "url": "https://www.yoavschverd.com",
+          "telephone": "+972-XX-XXXXXXX",
+          "email": "chef@yoavschverd.com",
+          "priceRange": "$$$",
+          "servesCuisine": ["International", "Mediterranean", "Fusion"],
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "IL"
+          }
+        }
+      </script>
+    </header>
+    <div class="site-video-background">
+      <iframe
+        src="https://www.youtube.com/embed/SS2IkrbthIw?autoplay=1&mute=1&controls=0&loop=1&playlist=SS2IkrbthIw&showinfo=0&rel=0&iv_load_policy=3&disablekb=1"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        title="סרטון רקע של השף יואב שוורד - Chef Yoav Schverd Background Video"
+      >
+      </iframe>
+    </div>
+    <main>
+      <h1>Contact with chef Yoav Schverd</h1>
+
+      <section class="intro-text">
+        <h2>Get in Touch</h2>
+
+        <p>
+          Ready to experience exceptional culinary services? Fill out the form
+          below and let us know how we can help make your event unforgettable.
+          We look forward to hearing from you!
+        </p>
+      </section>
+
+      <section class="contact-form-section" id="contact-form">
+        <form
+          action="https://formspree.io/f/xyzypqrs"
+          method="POST"
+          class="contact-form"
+        >
+          <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Enter your full name"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="your.email@example.com"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="+972-XX-XXXXXXX"
+            />
+          </div>
+
+          <div class="form-group">
+            <label>Service Type (select one):</label>
+            <div class="radio-group">
+              <label>
+                <input
+                  type="radio"
+                  name="service-type"
+                  value="private-chef"
+                  required
+                />
+                Private Chef Services
+              </label>
+              <label>
+                <input type="radio" name="service-type" value="catering" />
+                Luxury Catering
+              </label>
+              <label>
+                <input type="radio" name="service-type" value="consulting" />
+                Restaurant Consulting
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="service-type"
+                  value="menu-development"
+                />
+                Menu Development
+              </label>
+              <label>
+                <input type="radio" name="service-type" value="other" />
+                Other Services
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Additional Services (select all that apply):</label>
+            <div class="checkbox-group">
+              <label>
+                <input
+                  type="checkbox"
+                  name="additional-services"
+                  value="wine-pairing"
+                />
+                Wine Pairing
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  name="additional-services"
+                  value="dietary-accommodations"
+                />
+                Dietary Accommodations
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  name="additional-services"
+                  value="staff-service"
+                />
+                Professional Staff Service
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  name="additional-services"
+                  value="equipment-rental"
+                />
+                Equipment Rental
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="event-date">Preferred Event Date:</label>
+            <input type="date" id="event-date" name="event-date" />
+          </div>
+
+          <div class="form-group">
+            <label for="guests">Number of Guests:</label>
+            <input
+              type="number"
+              id="guests"
+              name="guests"
+              min="1"
+              placeholder="How many guests?"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message / Special Requests:</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="6"
+              required
+              placeholder="Tell us about your event and any special requirements..."
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <button type="submit" class="submit-button">Send Message</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="image-links-section">
+        <div class="image-card">
+          <a href="services.html" title="עבוד עם יואב - Work With Yoav">
+            <img
+              src="https://www.yoavschverd.com/wp-content/uploads/2022/07/2-1024x1024.png"
+              alt="Work With Yoav"
+            />
+            <h3>Work With Yoav</h3>
+          </a>
+        </div>
+
+        <div class="image-card">
+          <a href="gallery.html" title="פרויקטים מיוחדים - Special Projects">
+            <img
+              src="https://www.yoavschverd.com/wp-content/uploads/2025/03/Screenshot-2025-03-05-at-2.16.17%E2%80%AFPM-e1742882571839.png"
+              alt="Special Projects"
+            />
+            <h3>Special Projects</h3>
+          </a>
+        </div>
+
+        <div class="image-card">
+          <a href="about.html" title="מי זה יואב - Who Is Yoav">
+            <img
+              src="https://www.yoavschverd.com/wp-content/uploads/2022/07/1-1024x1024.png"
+              alt="Who Is Yoav"
+            />
+            <h3>Who Is Yoav</h3>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="chef-contact">
+        <p>
+          <a
+            href="mailto:chef@yoavschverd.com"
+            title="שלח אימייל לשף - Send Email to Chef"
+            >chef@yoavschverd.com</a
+          >
+          <br />
+          <a
+            href="https://www.instagram.com/yoavschverd"
+            target="_blank"
+            title="עקוב אחרינו באינסטגרם - Follow us on Instagram"
+            >Instagram</a
+          >
+          |
+          <a
+            href="https://www.facebook.com/yoav.schverd"
+            target="_blank"
+            title="עקוב אחרינו בפייסבוק - Follow us on Facebook"
+            >Facebook</a
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
